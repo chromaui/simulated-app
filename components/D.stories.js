@@ -1,5 +1,5 @@
 import { D } from "./D";
+import { EStory } from "./E.stories";
 
-
-const D = 'D';
-export { D };
+const DStory = 'D' + EStory;
+export { DStory };

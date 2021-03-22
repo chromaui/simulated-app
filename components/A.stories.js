@@ -1,5 +1,5 @@
 import { A } from "./A";
 
 
-const A = 'A';
-export { A };
+const AStory = 'A';
+export { AStory };

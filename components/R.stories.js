@@ -1,7 +1,7 @@
 import { R } from "./R";
-import { C } from "./C.stories";
-import { F } from "./F.stories";
-import { G } from "./G.stories";
+import { AStory } from "./A.stories";
+import { BStory } from "./B.stories";
+import { EStory } from "./E.stories";
 
-const R = 'R' + C + F + G;
-export { R };
+const RStory = 'R' + AStory + BStory + EStory;
+export { RStory };

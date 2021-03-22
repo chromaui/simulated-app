@@ -1,9 +1,8 @@
-import { A } from "./A";
+import { B } from "./B";
 import { D } from "./D";
-import { E } from "./E";
 import { F } from "./F";
 import { G } from "./G";
 import { H } from "./H";
 
-const Q = 'Q' + A + D + E + F + G + H;
+const Q = 'Q' + B + D + F + G + H;
 export { Q };

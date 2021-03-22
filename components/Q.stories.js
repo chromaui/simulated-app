@@ -1,10 +1,9 @@
 import { Q } from "./Q";
-import { A } from "./A.stories";
-import { D } from "./D.stories";
-import { E } from "./E.stories";
-import { F } from "./F.stories";
-import { G } from "./G.stories";
-import { H } from "./H.stories";
+import { BStory } from "./B.stories";
+import { DStory } from "./D.stories";
+import { FStory } from "./F.stories";
+import { GStory } from "./G.stories";
+import { HStory } from "./H.stories";
 
-const Q = 'Q' + A + D + E + F + G + H;
-export { Q };
+const QStory = 'Q' + BStory + DStory + FStory + GStory + HStory;
+export { QStory };

@@ -1,5 +1,5 @@
 import { H } from "./H";
 
 
-const H = 'H';
-export { H };
+const HStory = 'H';
+export { HStory };

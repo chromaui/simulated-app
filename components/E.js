@@ -1,4 +1,2 @@
-import { G } from "./G";
-
-const E = 'E' + G;
+const E = 'E';
 export { E };

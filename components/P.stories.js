@@ -1,5 +1,6 @@
 import { P } from "./P";
+import { BStory } from "./B.stories";
+import { FStory } from "./F.stories";
 
-
-const P = 'P';
-export { P };
+const PStory = 'P' + BStory + FStory;
+export { PStory };

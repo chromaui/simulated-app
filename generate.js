@@ -16,10 +16,10 @@ function generateComponentFileWithDeps(name, deps) {
 function generateStoryFileWithDeps(name, deps) {
   return dedent`
     import { ${name} } from "./${name}";
-    ${deps.map(n => `import { ${n} } from "./${n}.stories";`).join('\n')}
+    ${deps.map(n => `import { ${n}Story } from "./${n}.stories";`).join('\n')}
 
-    const ${name} = ${[`'${name}'`, ...deps].join(' + ')};
-    export { ${name} };
+    const ${name}Story = ${[`'${name}'`, ...deps.map(d=>`${d}Story`)].join(' + ')};
+    export { ${name}Story };
   `;
 }
 
@@ -46,6 +46,13 @@ pages.forEach((page) => {
 
   const storiesFile = generateStoryFileWithDeps(page, deps);
   writeFileSync(`./components/${page}.stories.js`, storiesFile)
+
+  const storiesEntry = dedent`
+    import { ${page}Story } from "./${page}.stories";
+
+    console.log(${page}Story);
+  `;
+  writeFileSync(`./components/${page}.entry.js`, storiesEntry);
 })
 
 const combined = [...components, ...pages];

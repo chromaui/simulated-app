@@ -4,6 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "dedent": "^0.7.0"
+    "dedent": "^0.7.0",
+    "esbuild": "^0.9.6",
+    "webpack": "^5.27.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "build-webpack": "webpack"
   }
 }

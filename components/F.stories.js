@@ -1,5 +1,5 @@
 import { F } from "./F";
 
 
-const F = 'F';
-export { F };
+const FStory = 'F';
+export { FStory };

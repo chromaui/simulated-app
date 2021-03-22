@@ -1,5 +1,5 @@
 import { G } from "./G";
 
 
-const G = 'G';
-export { G };
+const GStory = 'G';
+export { GStory };

@@ -1,6 +1,6 @@
-import { C } from "./C";
-import { F } from "./F";
-import { G } from "./G";
+import { A } from "./A";
+import { B } from "./B";
+import { E } from "./E";
 
-const R = 'R' + C + F + G;
+const R = 'R' + A + B + E;
 export { R };
